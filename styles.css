@@ -1,0 +1,74 @@
+:root {
+  --black-color: #000000;
+  --white-color: #FFFF;
+  --gray-color: #A5A5A5;
+  --blue-color: #08A6E4;
+  --pink-color: #EB476E;
+  --blue-color-btn: #07ACE6;
+  --blue-color-btn2: #55DFB4;
+  --pink-color-card: #FB3B64;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.header__title,
+.header__icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header__title {
+  margin-right: 2%;
+  font-weight: 300;
+}
+
+.header__icon {
+  margin-left: 2%;
+}
+
+.header {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 8%;
+  background-color: var(--white-color);
+  color: var(--blue-color);
+  font-family: "Raleway";
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+}
+
+.shop h1 {
+  text-align: center;
+  color: var(--black-color);
+  font-family: "Raleway";
+  font-weight: 400;
+  margin-top: 5%;
+}
+
+.shop h4 {
+  text-align: center;
+  color: var(--black-color);
+  font-family: "Open Sans";
+}
+
+.shop .btn-1 {
+  display: block;
+  font-family: "Open Sans";
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  text-align: center;
+  border-radius: 30px;
+  border: none;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
