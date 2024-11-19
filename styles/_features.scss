@@ -1,0 +1,100 @@
+.features {
+    background-color: #F7F7F7;
+    text-align: center;
+    padding: 1rem .5rem;
+
+    &__card {
+        background-color: #FFFFFF;
+        border: 1px solid #E8E9ED;
+        border-radius: .3rem;
+        text-align: start;
+        padding: 1rem;
+        margin: 1rem auto;
+        margin-bottom: 2rem;
+        width: 95%;
+        display: inline-block;
+
+        &__title {
+            color: black;
+            font-family: 'Raleway';
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 2rem;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+        }
+
+        &__description {
+            color: black;
+            font-family: 'Open Sans';
+            font-size: 0.875rem;
+            line-height: 1.1875rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        &__images {
+            max-width: 258px;
+            min-width: 258px;
+            margin: 0 auto;
+            position: relative;
+        }
+    }
+}
+
+.features__images__macbook {
+    margin: 0 auto;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    max-width: 100%;
+    transform: translateX(-50%);
+}
+
+.features__images__red-circle {
+    margin: 0 auto 1rem;
+    z-index: 0;
+    margin-left: 160px;
+    margin-top: -30px;
+}
+
+.features__images__iphone {
+    margin: 0 auto 1rem;
+    z-index: 1;
+    margin-left: 30%;
+    position: relative;
+    display: block;
+}
+
+.features__images__blue-circle {
+    margin: 0 auto 1rem;
+    z-index: 0;
+    margin-top: -160px;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.features__images-exc {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.features__images__green-rectangle {
+    z-index: 0;
+    width: 100%;
+}
+
+.features__images__trumpet {
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.features__images__green-rectangle,
+.features__images__trumpet {
+    display: block;
+    margin: 0 auto 1rem;
+}

@@ -1,0 +1,28 @@
+@use 'header.scss';
+@use 'shop.scss';
+@use 'info.scss';
+@use 'features.scss';
+@use 'pricing.scss';
+@use 'form.scss';
+@use 'footer.scss';
+
+:root {
+    --black-color: #000000;
+    --white-color: #FFFF;
+    --gray-color: #A5A5A5;
+    --blue-color: #08A6E4;
+    --pink-color: #EB476E;
+    --blue-color-btn: #07ACE6;
+    --blue-color-btn2: #55DFB4;
+    --pink-color-card: #FB3B64;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+}

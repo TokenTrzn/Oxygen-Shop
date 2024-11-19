@@ -1,0 +1,81 @@
+.info {
+    padding: .5rem 1rem;
+    text-align: center;
+
+    &__title {
+        font-family: 'Raleway';
+        font-weight: 300;
+        font-size: 2.2rem;
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__images {
+        position: relative;
+        max-width: 258px;
+        min-width: 258px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    &__circle {
+        display: block;
+        position: relative;
+        margin: 0 auto 1rem;
+        z-index: 0;
+    }
+
+    &__number {
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.375rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+        color: #A5A5A5;
+
+    }
+}
+
+.images__circle {
+
+    position: absolute;
+    margin: 0 auto;
+    z-index: 0;
+    vertical-align: middle;
+
+}
+
+.images__person,
+.images__eye,
+.images__catalog {
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    vertical-align: middle;
+}
+
+.images__eye {
+    margin-top: 12px;
+}
+
+.images__catalog {
+    margin-top: 8px;
+}

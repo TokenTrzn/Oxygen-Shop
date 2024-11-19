@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>OXYGEN Shop</title>
 </head>
 
@@ -15,18 +14,149 @@
         <h1 class="header__title">OXYGENShop</h1>
         <img class="header__icon" src="resources/Menu.png">
     </header>
-    <main>
-        <section class="shop">
-            <h1>Sell More!</h1>
-            <h4>Open shop on our platform and increase your sales</h4>
-            <button class="btn-1">Open your shop</button>
-            <div class="background__img__1">
-                <img src="resources/Background 1.png" alt="Background" />
+    <section class="shop">
+        <h2 class="shop__title">Sell More!</h2>
+        <p class="shop__description">Open shop on our platform and <br> increase your sales</p>
+        <button class="shop__btn-1">Open your shop</button>
+    </section>
+    <div class="background">
+        <img src="resources/Background 1.png" class="background__img" alt="Background image" />
+    </div>
+    <section class="info">
+        <h2 class="info__title">The most popular sales platfrom in country</h2>
+        <article class="info__item">
+            <div class="info__images">
+                <img src="./resources/Ellipse 1.png" class="images__circle" />
+                <img src="./resources/Person 2.png" class="images__person" />
             </div>
-        </section>
-    </main>
-    <footer>
+            <p class="info__number">100000+</p>
+            <p class="info__description">daily entries</p>
 
+        </article>
+
+        <article class="info__item">
+            <div class="info__images">
+                <img src="./resources/Ellipse 2 pequeña.png" class="images__circle" />
+                <img src="./resources/Eye 2.png" class="images__eye" />
+            </div>
+            <p class="info__number">2000000+</p>
+            <p class="info__description">seen products every day</p>
+
+        </article>
+
+        <article class="info__item">
+            <div class="info__images">
+                <img src="./resources/Ellipse 3.png" class="images__circle" />
+                <img src="./resources/Catalog 2.png" class="images__catalog" />
+            </div>
+            <p class="info__number">10000+</p>
+            <p class="info__description">added posts daily</p>
+
+        </article>
+    </section>
+
+    <section class="features">
+        <article class="features__card">
+            <div class="features__images">
+                <img src="./resources/Macbook2 2.png" class="features__images__macbook"/>
+                <img src="./resources/Frame 11.png" class="features__images__red-circle"/>
+            </div>
+            <p class="features__card__title">Be always first</p>
+            <p class="features__card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<p>
+        </article>
+
+        <article class="features__card">
+            <div class="features__images">
+                <img src="./resources/iPhone2 2.png" class="features__images__iphone"/>
+                <img src="./resources/Ellipse 2.png" class="features__images__blue-circle"/>
+            </div>
+            <p class="features__card__title">Your shop is where you are!</p>
+            <p class="features__card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </article>
+
+        <article class="features__card">
+            <p class="features__card__title">Increase recognition your brand!</p>
+            <p class="features__card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <div class="features__images-exc">
+                <img src="./resources/Trumpet 2.png" class="features__images__trumpet"/>
+                <img src="./resources/Rectangle 6.png" class="features__images__green-rectangle"/>
+            </div>
+        </article>
+    </section>
+
+    <section class="pricing">
+        <h2 class="pricing__title"></h2>
+        <article class="pricing__card basic">
+            <div class="pricing__card__plan">Basic</div>
+            <div class="pricing__card__price">$0</div>
+            <ul class="pricing__services">
+                <li>100 MB HDD</li>
+                <li>1 Subdomain</li>
+                <li>2 E-mails</li>
+                <li class="pricing__services__unsupported">Two years license</li>
+                <li class="pricing__services__unsupported">Full support</li>
+            </ul>            
+            <button class="pricing__btn">Begin</button>
+        </article>
+
+        <article class="pricing__card professional">
+            <div class="pricing__card__plan">Professional</div>
+            <div class="pricing__card__price">$25</div>
+            <ul class="pricing__services">
+                <li>500 MB HDD</li>
+                <li>2 Subdomain</li>
+                <li>5 E-mails</li>
+                <li>One years license</li>
+                <li class="pricing__services__unsupported">Full support</li>
+            </ul>
+            <button class="pricing__btn">Begin</button>
+        </article>
+
+        <article class="pricing__card premium">
+            <div class="pricing__card__plan">Premium</div>
+            <div class="pricing__card__price">$60</div>
+            <ul class="pricing__services">
+                <li>2 GB HDD</li>
+                <li>5 Subdomain</li>
+                <li>20 E-mails</li>
+                <li>Two years license</li>
+                <li>Full support</li>
+            </ul>
+            <button class="pricing__btn">Begin</button>
+        </article>
+    </section>
+    <form class="form" action="" method="">
+        <h2 class="form__title">Any Questions?</h2>
+        <p class="form__description">Leave your email addres or call us!</p>
+        <div class="form__example_div">
+            <img class="form__icon" src="./resources/Mail Icon 2.png" />
+            <p class="form__example">info@bestshop.xyz</p>  
+        </div>
+        <div class="form__example_div" id="phone_example">
+            <img class="form__icon" src="./resources/Phone Icon 2.png" />
+            <p class="form__example">123 456 789</p>
+        </div>
+        <p class="form__placeholder">NAME</p>
+        <input name="form__input" type="text" />
+        <p class="form__placeholder">EMAIL</p>
+        <input name="form__input" id="email-input" type="text" />
+        <div class="form__data-protection">
+            <input name="checkbox" type="checkbox" />
+            <p class="form__checkbox__text">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+        </div>
+        <button class="form__btn">Send</button>
+    </form>
+    
+    <footer class="footer">
+        <div class="footer__text">
+            <h2 class="footer__text__title">OXYGENShop</h2>
+            <p class="footer__text__description">© 2022 OXYGEN, All Rights Reserved</p>
+        </div>        
+        <img id="twitter-icon" class="footer__icon" src="./resources/Twitter (2) 2.png"/>
+        <img id="facebook-icon" class="footer__icon" src="./resources/Facebook.png"/>
     </footer>
 </body>
 
