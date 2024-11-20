@@ -67,22 +67,10 @@
   margin-bottom: 1.5rem;
 }
 .info__images {
-  position: relative;
-  max-width: 258px;
-  min-width: 258px;
-  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 .info__item {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  margin-bottom: 3rem;
-}
-.info__circle {
-  display: block;
-  position: relative;
-  margin: 0 auto 1rem;
-  z-index: 0;
+  margin-bottom: 2rem;
 }
 .info__number {
   font-family: "Raleway";
@@ -104,28 +92,22 @@
 
 .images__circle {
   position: absolute;
-  margin: 0 auto;
-  z-index: 0;
-  vertical-align: middle;
+  left: 38%;
 }
 
 .images__person,
 .images__eye,
 .images__catalog {
   position: relative;
-  margin: 0 auto;
-  z-index: 1;
-  margin-bottom: 2rem;
-  margin-left: 2rem;
-  vertical-align: middle;
+  left: 3%;
 }
 
 .images__eye {
-  margin-top: 12px;
+  margin-top: 0.75rem;
 }
 
 .images__catalog {
-  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 
 .features {

@@ -11,24 +11,11 @@
     }
 
     &__images {
-        position: relative;
-        max-width: 258px;
-        min-width: 258px;
-        margin: 0 auto;
+        margin-bottom: 1rem;
     }
 
     &__item {
-        display: inline-block;
-        position: relative;
-        width: 100%;
-        margin-bottom: 3rem;
-    }
-
-    &__circle {
-        display: block;
-        position: relative;
-        margin: 0 auto 1rem;
-        z-index: 0;
+        margin-bottom: 2rem;
     }
 
     &__number {
@@ -48,34 +35,25 @@
         line-height: 1.5rem;
         text-align: center;
         color: #A5A5A5;
-
     }
 }
 
 .images__circle {
-
     position: absolute;
-    margin: 0 auto;
-    z-index: 0;
-    vertical-align: middle;
-
+    left: 38%;
 }
 
 .images__person,
 .images__eye,
 .images__catalog {
     position: relative;
-    margin: 0 auto;
-    z-index: 1;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-    vertical-align: middle;
+    left: 3%;
 }
 
 .images__eye {
-    margin-top: 12px;
+    margin-top: .75rem;
 }
 
 .images__catalog {
-    margin-top: 8px;
+    margin-top: .5rem;
 }
