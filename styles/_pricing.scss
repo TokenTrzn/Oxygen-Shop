@@ -9,27 +9,21 @@
         font-weight: 400;
         font-size: 2.25rem;
         color: black;
+        margin-bottom: 1rem;
     }
 
     &__card {
         position: relative;
-        display: inline-block;
-        width: 90%;
-        height: 15rem;
-        background-color: white;
         border-radius: 1rem;
-        margin: 1rem;
         margin-bottom: 3rem;
         padding: 1rem;
-        text-align: start;
-        vertical-align: top;
 
         &.basic {
             border: 1px solid #FB3B64;
             .pricing__btn {
                 background-color: #FB3B64;
             }
-            .pricing__card__price {
+            .pricing__card__plan__price {
                 color: #FB3B64;
             }
         }
@@ -39,7 +33,7 @@
             .pricing__btn {
                 background-color: #07ACE6;
             }
-            .pricing__card__price {
+            .pricing__card__plan__price {
                 color: #07ACE6;
             }
         }
@@ -49,38 +43,34 @@
             .pricing__btn {
                 background-color: #55DFB4;
             }
-            .pricing__card__price {
+            .pricing__card__plan__price {
                 color: #55DFB4;
             }
         }
 
         &__plan {
-            font-family: 'Raleway';
-            font-weight: 700;
-            font-size: 1.25rem;
-            line-height: 1.5rem;
-            color: #13253B;
-        }   
-        
-        &__price {
-            font-size: 2.875rem;
-            font-family: 'Open Sans';
-            font-weight: 300;
-            line-height: 4rem;
-        }
 
-        &__plan,
-        &__price {
-            position: relative;
             display: inline-block;
+            text-align: center;
             vertical-align: middle;
-            text-align: start;
+            padding-right: 15%;
             width: 50%;
-        }
-    }
+           
+            &__name {
+                font-family: 'Raleway';
+                font-weight: 700;
+                font-size: 1.25rem;
+                line-height: 1.5rem;
+                color: #13253B;
+            }
 
-    &__card:hover {
-        
+            &__price {
+                font-size: 2.875rem;
+                font-family: 'Open Sans';
+                font-weight: 300;
+                line-height: 4rem;
+            }
+        }         
     }
 
     &__btn {
@@ -102,12 +92,9 @@
 
     &__services {
         list-style: none;
-        text-align: start;
-        padding: 0;
-        margin-bottom: 1rem;
-        display: inline-block;
-        vertical-align: top;
         position: relative;
+        display: inline-block;
+        vertical-align: middle;
     }
 
     &__services li {

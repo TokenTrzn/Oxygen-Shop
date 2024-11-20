@@ -218,19 +218,13 @@
   font-weight: 400;
   font-size: 2.25rem;
   color: black;
+  margin-bottom: 1rem;
 }
 .pricing__card {
   position: relative;
-  display: inline-block;
-  width: 90%;
-  height: 15rem;
-  background-color: white;
   border-radius: 1rem;
-  margin: 1rem;
   margin-bottom: 3rem;
   padding: 1rem;
-  text-align: start;
-  vertical-align: top;
 }
 .pricing__card.basic {
   border: 1px solid #FB3B64;
@@ -238,7 +232,7 @@
 .pricing__card.basic .pricing__btn {
   background-color: #FB3B64;
 }
-.pricing__card.basic .pricing__card__price {
+.pricing__card.basic .pricing__card__plan__price {
   color: #FB3B64;
 }
 .pricing__card.professional {
@@ -247,7 +241,7 @@
 .pricing__card.professional .pricing__btn {
   background-color: #07ACE6;
 }
-.pricing__card.professional .pricing__card__price {
+.pricing__card.professional .pricing__card__plan__price {
   color: #07ACE6;
 }
 .pricing__card.premium {
@@ -256,28 +250,28 @@
 .pricing__card.premium .pricing__btn {
   background-color: #55DFB4;
 }
-.pricing__card.premium .pricing__card__price {
+.pricing__card.premium .pricing__card__plan__price {
   color: #55DFB4;
 }
 .pricing__card__plan {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding-right: 15%;
+  width: 50%;
+}
+.pricing__card__plan__name {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: #13253B;
 }
-.pricing__card__price {
+.pricing__card__plan__price {
   font-size: 2.875rem;
   font-family: "Open Sans";
   font-weight: 300;
   line-height: 4rem;
-}
-.pricing__card__plan, .pricing__card__price {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: start;
-  width: 50%;
 }
 .pricing__btn {
   font-family: "Open Sans";
@@ -297,12 +291,9 @@
 }
 .pricing__services {
   list-style: none;
-  text-align: start;
-  padding: 0;
-  margin-bottom: 1rem;
-  display: inline-block;
-  vertical-align: top;
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
 }
 .pricing__services li {
   font-family: "Open Sans";
