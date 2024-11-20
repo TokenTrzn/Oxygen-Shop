@@ -1,5 +1,5 @@
 .form {
-    margin-top: 4rem;
+    margin-top: 3rem;
     text-align: start;
     padding-left: 1rem;
     width: 100%;
@@ -37,7 +37,9 @@
 
     &__data-protection {
         text-align: start;
-        width: 100%;
+        width: 90%;
+        position: relative;
+        display: inline;
     }
 
     &__btn {
@@ -85,21 +87,22 @@ input[type="text"] {
 input[type="checkbox"] {
     display: inline-block;
     vertical-align: top;
+    margin-right: .5rem;
 }
 
 #phone_example {
     margin-bottom: 3rem;
 }
 
-.form__checkbox__text {
+label {
     font-family: 'Open Sans';
+    text-align: start;
     font-weight: 400;
     font-size: .75rem;
     line-height: 1rem;
     color: #707070;
     display: inline-block;
     vertical-align: top;
-    padding-right: 1rem;
 }
 
 #email-input {

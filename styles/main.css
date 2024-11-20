@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   position: relative;
   text-align: center;
@@ -237,7 +238,7 @@
 .pricing {
   display: block;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 .pricing__title {
@@ -324,21 +325,36 @@
 }
 .pricing__services {
   list-style: none;
-  text-align: left;
+  text-align: start;
   padding: 0;
-  margin-top: 1rem;
-  width: 50%;
+  margin-bottom: 1rem;
   display: inline-block;
-  text-align: left;
   vertical-align: top;
+  position: relative;
+}
+.pricing__services li {
+  font-family: "Open Sans";
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  text-align: start;
+  color: black;
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+.pricing__services li::before {
+  content: "☑";
   position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+  left: 0;
+  color: #55DFB4;
+  font-size: 1rem;
+}
+.pricing__services li.unsupported::before {
+  content: "☒";
+  color: #EB476E;
 }
 
 .form {
-  margin-top: 4rem;
+  margin-top: 3rem;
   text-align: start;
   padding-left: 1rem;
   width: 100%;
@@ -372,7 +388,9 @@
 }
 .form__data-protection {
   text-align: start;
-  width: 100%;
+  width: 90%;
+  position: relative;
+  display: inline;
 }
 .form__btn {
   display: inline-block;
@@ -418,21 +436,22 @@ input[type=text] {
 input[type=checkbox] {
   display: inline-block;
   vertical-align: top;
+  margin-right: 0.5rem;
 }
 
 #phone_example {
   margin-bottom: 3rem;
 }
 
-.form__checkbox__text {
+label {
   font-family: "Open Sans";
+  text-align: start;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1rem;
   color: #707070;
   display: inline-block;
   vertical-align: top;
-  padding-right: 1rem;
 }
 
 #email-input {

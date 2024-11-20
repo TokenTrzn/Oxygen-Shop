@@ -88,7 +88,7 @@
     </section>
 
     <section class="pricing">
-        <h2 class="pricing__title"></h2>
+        <h2 class="pricing__title">Pricing</h2>
         <article class="pricing__card basic">
             <div class="pricing__card__plan">Basic</div>
             <div class="pricing__card__price">$0</div>
@@ -96,8 +96,8 @@
                 <li>100 MB HDD</li>
                 <li>1 Subdomain</li>
                 <li>2 E-mails</li>
-                <li class="pricing__services__unsupported">Two years license</li>
-                <li class="pricing__services__unsupported">Full support</li>
+                <li class="unsupported">Two years license</li>
+                <li class="unsupported">Full support</li>
             </ul>            
             <button class="pricing__btn">Begin</button>
         </article>
@@ -110,7 +110,7 @@
                 <li>2 Subdomain</li>
                 <li>5 E-mails</li>
                 <li>One years license</li>
-                <li class="pricing__services__unsupported">Full support</li>
+                <li class="unsupported">Full support</li>
             </ul>
             <button class="pricing__btn">Begin</button>
         </article>
@@ -144,8 +144,8 @@
         <p class="form__placeholder">EMAIL</p>
         <input name="form__input" id="email-input" type="text" />
         <div class="form__data-protection">
-            <input name="checkbox" type="checkbox" />
-            <p class="form__checkbox__text">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+            <input name="checkbox" id="checkbox" type="checkbox" />
+            <label class="form__checkbox__text" for="checkbox">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label>
         </div>
         <button class="form__btn">Send</button>
     </form>
