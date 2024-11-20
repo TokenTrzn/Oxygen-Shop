@@ -36,10 +36,8 @@
     }
 
     &__data-protection {
-        text-align: start;
-        width: 90%;
         position: relative;
-        display: inline;
+        margin-bottom: 1rem;
     }
 
     &__btn {
@@ -85,9 +83,8 @@ input[type="text"] {
 }
 
 input[type="checkbox"] {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: .5rem;
+    position: absolute;
+    top: 2%;
 }
 
 #phone_example {
@@ -96,13 +93,12 @@ input[type="checkbox"] {
 
 label {
     font-family: 'Open Sans';
-    text-align: start;
     font-weight: 400;
     font-size: .75rem;
     line-height: 1rem;
     color: #707070;
     display: inline-block;
-    vertical-align: top;
+    margin: 0 1.5rem 0 1.5rem;
 }
 
 #email-input {

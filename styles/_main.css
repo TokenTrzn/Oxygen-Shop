@@ -350,10 +350,8 @@
   color: #08A6E4;
 }
 .form__data-protection {
-  text-align: start;
-  width: 90%;
   position: relative;
-  display: inline;
+  margin-bottom: 1rem;
 }
 .form__btn {
   display: inline-block;
@@ -397,8 +395,8 @@ input[type=text] {
 }
 
 input[type=checkbox] {
-  display: inline-block;
-  vertical-align: top;
+  position: absolute;
+  top: 2%;
   margin-right: 0.5rem;
 }
 
@@ -414,7 +412,7 @@ label {
   line-height: 1rem;
   color: #707070;
   display: inline-block;
-  vertical-align: top;
+  margin: 0 1.5rem 0 1.5rem;
 }
 
 #email-input {
