@@ -8,9 +8,38 @@
         padding: 1rem;
     }
 
+    &__menu {
+        display: none;
+        list-style: none;
+
+        &__item {
+            display: inline-block;
+            padding: 1rem;
+            padding-right: 6rem
+        }
+    }
+
     &__icon {
         position: absolute;
         top: 4%;
-        right: 4%;
+        right: 8%;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__menu {
+            display: flex;
+        }
+
+        &__icon {
+            display: none;
+        }
+
+        &__title {
+            padding-left: 4rem;
+        }
     }
 }
