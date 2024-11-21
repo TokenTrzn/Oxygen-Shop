@@ -3,12 +3,18 @@
     text-align: start;
     padding-left: 1rem;
     width: 100%;
+    position: relative;
 
     &__title {
         font-family: 'Raleway';
         font-weight: 400;
         font-size: 2.5rem;
         line-height: 3rem;
+
+        @media only screen and (min-width: 1000px) {
+            grid-column: 1;
+            grid-row: 1;
+        }
     }
 
     &__description {
@@ -17,11 +23,33 @@
         font-size: 1rem;
         line-height: 1.375rem;
         margin-bottom: 2rem;
+
+        @media only screen and (min-width: 1000px) {
+            grid-column: 1;
+            grid-row: 2;
+        }
     }
 
     &__example_div {
         position: relative;
         margin-top: 1rem;
+    }
+
+    &__name-input {
+        padding-bottom: 1rem;
+
+        @media only screen and (min-width: 1000px) {
+            grid-column: 2;
+            grid-row: 1;
+        }
+    }
+
+    &__email-input {
+
+        @media only screen and (min-width: 1000px) {
+            grid-column: 2;
+            grid-row: 3;
+        }
     }
 
     &__placeholder {
@@ -33,20 +61,38 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
         color: #08A6E4;
+
+        @media only screen and (min-width: 1000px) {
+            margin: 0;
+            padding: 0;
+        }
     }
 
     &__data-protection {
         position: relative;
         margin-bottom: 1rem;
+        margin-top: 2rem;
+
+        @media only screen and (min-width: 1000px) {
+            grid-column: 2;
+            grid-row: 3;
+            padding-top: 2rem;
+        }
     }
 
     &__container-btn {
         text-align: end;
         margin-right: 2rem;
+        position: relative;
+
+        @media only screen and (min-width: 1000px) {
+            grid-column: 2;
+            grid-row: 5;
+        }
     }
 
     &__btn {
-        right: 0;
+        position: relative;
         font-family: 'Open Sans';
         font-weight: 700;
         font-size: .825rem;
@@ -60,6 +106,20 @@
         height: 3.125rem;
         width: 60%;
         box-shadow: 0 .4rem .4rem #07ACE64A;
+
+        @media only screen and (min-width: 1000px) {
+            grid-column: 2;
+            grid-row: 5;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 3.5em 2em 1fr;
+        grid-template-columns: 25em 35em;
+        padding-left: 2em;
+        justify-content: center;
     }
 }
 
@@ -88,10 +148,28 @@ input[type="text"] {
 input[type="checkbox"] {
     position: absolute;
     top: 2%;
+    
+    @media only screen and (min-width: 1000px) {
+        top: 2.25rem;
+    }
 }
 
-#phone_example {
+#phone {
     margin-bottom: 3rem;
+
+    @media only screen and (min-width: 1000px) {
+        padding-left: 12rem;
+    }
+}
+
+#email,
+#phone {
+    margin-bottom: 3rem;
+
+    @media only screen and (min-width: 1000px) {
+        grid-column: 1;
+        grid-row: 3;   
+    }
 }
 
 label {
@@ -104,6 +182,3 @@ label {
     margin: 0 1.5rem 0 1.5rem;
 }
 
-#email-input {
-    margin-bottom: 3rem;
-}
