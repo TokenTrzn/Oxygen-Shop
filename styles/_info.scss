@@ -12,6 +12,16 @@
 
     &__images {
         margin-bottom: 1rem;
+
+        &__circle {
+            position: absolute;
+            left: 38%;
+            z-index: -1;
+        }
+
+        #blue-circle {
+            margin-bottom: 1rem;
+        }
     }
 
     &__item {
@@ -36,24 +46,28 @@
         text-align: center;
         color: #A5A5A5;
     }
-}
 
-.images__circle {
-    position: absolute;
-    left: 38%;
-}
+    @media only screen and (min-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-.images__person,
-.images__eye,
-.images__catalog {
-    position: relative;
-    left: 3%;
-}
+        &__title {
+            font-size: 2.25rem;
+            padding-bottom: 2rem;
+        }
 
-.images__eye {
-    margin-top: .75rem;
-}
+        &__item {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
 
-.images__catalog {
-    margin-top: .5rem;
+        &__images {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
 }
