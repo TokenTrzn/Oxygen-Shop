@@ -40,9 +40,12 @@
         margin-bottom: 1rem;
     }
 
+    &__container-btn {
+        text-align: end;
+        margin-right: 2rem;
+    }
+
     &__btn {
-        display: inline-block;
-        margin-left: 30%;
         right: 0;
         font-family: 'Open Sans';
         font-weight: 700;
