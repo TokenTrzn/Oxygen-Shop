@@ -15,6 +15,11 @@
   display: inline-block;
   padding: 1rem 3rem 1rem 2rem;
 }
+.header__menu__item:hover {
+  color: black;
+  border-bottom: 2px solid var(--blue-color);
+  padding-bottom: 0.2rem;
+}
 .header__icon {
   position: absolute;
   top: 4%;
@@ -248,7 +253,7 @@
   }
 }
 .features__card__images__blue-circle {
-  margin: 0 auto 1rem;
+  margin: 0 auto 1rem 2rem;
 }
 @media only screen and (min-width: 1000px) {
   .features__card__images__blue-circle {
@@ -336,8 +341,7 @@
 .pricing__card {
   position: relative;
   border-radius: 1rem;
-  margin-bottom: 3rem;
-  padding: 1rem;
+  margin: 1rem 1.2rem 3rem 1.2rem;
 }
 .pricing__card.basic {
   border: 1px solid #FB3B64;
@@ -379,6 +383,7 @@
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: #13253B;
+  padding-top: 1rem;
 }
 .pricing__card__plan__price {
   font-size: 2.875rem;
@@ -436,6 +441,8 @@
   position: relative;
   display: inline-block;
   vertical-align: middle;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
 }
 @media only screen and (min-width: 1000px) {
   .pricing__services {

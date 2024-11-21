@@ -16,8 +16,8 @@
     &__card {
         position: relative;
         border-radius: 1rem;
-        margin-bottom: 3rem;
-        padding: 1rem;
+        margin: 1rem 1.2rem 3rem 1.2rem;
+
 
         &.basic {
             border: 1px solid #FB3B64;
@@ -69,6 +69,7 @@
                 font-size: 1.25rem;
                 line-height: 1.5rem;
                 color: #13253B;
+                padding-top: 1rem;
             }
 
             &__price {
@@ -133,6 +134,8 @@
         position: relative;
         display: inline-block;
         vertical-align: middle;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
 
         @media only screen and (min-width: 1000px) {
             display: flex;
