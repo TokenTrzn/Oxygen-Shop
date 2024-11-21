@@ -67,6 +67,7 @@
   font-size: 1rem;
   font-weight: 700;
   box-shadow: 0 0.4rem 0.4rem rgba(7, 172, 230, 0.2901960784);
+  cursor: pointer;
 }
 @media only screen and (min-width: 1000px) {
   .shop__title {
@@ -401,6 +402,18 @@
     width: 30%;
   }
 }
+.pricing__card:hover {
+  transform: scale(1.1);
+}
+.pricing__card:hover.basic {
+  box-shadow: 0px 4px 20px #FB3B64;
+}
+.pricing__card:hover.professional {
+  box-shadow: 0px 4px 20px #07ACE6;
+}
+.pricing__card:hover.premium {
+  box-shadow: 0px 4px 20px #55DFB4;
+}
 .pricing__btn {
   font-family: "Open Sans";
   font-weight: 700;
@@ -569,6 +582,7 @@
   height: 3.125rem;
   width: 60%;
   box-shadow: 0 0.4rem 0.4rem rgba(7, 172, 230, 0.2901960784);
+  cursor: pointer;
 }
 @media only screen and (min-width: 1000px) {
   .form__btn {
