@@ -95,6 +95,7 @@
 .info {
   text-align: center;
   position: relative;
+  padding-bottom: 6rem;
 }
 .info__title {
   font-family: "Raleway";
@@ -171,10 +172,123 @@
   padding: 1rem;
   margin: 1rem auto;
   margin-bottom: 2rem;
-  width: 95%;
-  display: inline-block;
+  width: 80%;
+  position: relative;
 }
-.features__card__title {
+@media only screen and (min-width: 1000px) {
+  .features__card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .features__card #red-feature {
+    border-bottom: 3px solid #FB3B64;
+    padding-right: 5rem;
+    padding-left: 2rem;
+  }
+  .features__card #blue-feature {
+    border-bottom: 3px solid #08A6E4;
+    padding-right: 5rem;
+    padding-left: 2rem;
+  }
+  .features__card #green-feature {
+    border-bottom: 4px solid #55DFB4;
+    padding-right: 5rem;
+    padding-left: 2rem;
+  }
+}
+.features__card__images {
+  max-width: 258px;
+  min-width: 258px;
+  margin: 0 auto;
+  position: relative;
+}
+@media only screen and (min-width: 1000px) {
+  .features__card__images {
+    flex: 1;
+    max-width: 50%;
+    padding: 2rem;
+  }
+}
+.features__card__images__macbook {
+  margin: 0 auto;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  max-width: 100%;
+  transform: translateX(-50%);
+}
+@media only screen and (min-width: 1000px) {
+  .features__card__images__macbook {
+    content: url(../resources/Macbook\ Desktop.png);
+  }
+}
+.features__card__images__red-circle {
+  margin: 0 auto 1rem;
+  z-index: 0;
+  margin-left: 160px;
+  margin-top: -30px;
+}
+@media only screen and (min-width: 1000px) {
+  .features__card__images__red-circle {
+    content: url(../resources/Red\ Rectangle\ Desktop.png);
+  }
+}
+.features__card__images__iphone {
+  margin: 0 auto;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  max-width: 100%;
+  transform: translateX(-50%);
+}
+@media only screen and (min-width: 1000px) {
+  .features__card__images__iphone {
+    content: url(../resources/iPhone2\ 1.png);
+  }
+}
+.features__card__images__blue-circle {
+  margin: 0 auto 1rem;
+}
+@media only screen and (min-width: 1000px) {
+  .features__card__images__blue-circle {
+    content: url(../resources/Big\ Blue\ Circle.png);
+  }
+}
+.features__card__images-exc {
+  max-width: 258px;
+  min-width: 258px;
+  margin: 0 auto;
+  position: relative;
+}
+.features__card__images-exc__green-rectangle {
+  z-index: 0;
+  width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+  .features__card__images-exc__green-rectangle {
+    content: url(../resources/Green\ Rectangle\ Desktop.png);
+  }
+}
+.features__card__images-exc__trumpet {
+  position: absolute;
+  z-index: 1;
+  top: 70%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (min-width: 1000px) {
+  .features__card__images-exc__trumpet {
+    content: url(../resources/Trumpet\ 1.png);
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .features__card__text {
+    flex: 1;
+    max-width: 50%;
+  }
+}
+.features__card__text__title {
   color: black;
   font-family: "Raleway";
   font-size: 1.8rem;
@@ -183,7 +297,13 @@
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
-.features__card__description {
+@media only screen and (min-width: 1000px) {
+  .features__card__text__title {
+    font-size: 2.25rem;
+    line-height: 2.8rem;
+  }
+}
+.features__card__text__description {
   color: black;
   font-family: "Open Sans";
   font-size: 0.875rem;
@@ -191,68 +311,12 @@
   font-weight: 400;
   margin-bottom: 1rem;
 }
-.features__card__images {
-  max-width: 258px;
-  min-width: 258px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.features__images__macbook {
-  margin: 0 auto;
-  z-index: 1;
-  position: absolute;
-  left: 50%;
-  max-width: 100%;
-  transform: translateX(-50%);
-}
-
-.features__images__red-circle {
-  margin: 0 auto 1rem;
-  z-index: 0;
-  margin-left: 160px;
-  margin-top: -30px;
-}
-
-.features__images__iphone {
-  margin: 0 auto 1rem;
-  z-index: 1;
-  margin-left: 30%;
-  position: relative;
-  display: block;
-}
-
-.features__images__blue-circle {
-  margin: 0 auto 1rem;
-  z-index: 0;
-  margin-top: -160px;
-  margin-bottom: 40px;
-  display: block;
-}
-
-.features__images-exc {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.features__images__green-rectangle {
-  z-index: 0;
-  width: 100%;
-}
-
-.features__images__trumpet {
-  position: absolute;
-  z-index: 1;
-  top: 70%;
-  left: 44%;
-  transform: translate(-50%, -50%);
-}
-
-.features__images__green-rectangle,
-.features__images__trumpet {
-  display: block;
-  margin: 0 auto 1rem;
+@media only screen and (min-width: 1000px) {
+  .features__card__text__description {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .pricing {
