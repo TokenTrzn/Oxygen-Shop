@@ -324,6 +324,13 @@
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  .excp-row {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
 .pricing__title {
   font-family: "Raleway";
   font-weight: 400;
@@ -374,8 +381,6 @@
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  padding-right: 15%;
-  width: 50%;
 }
 .pricing__card__plan__name {
   font-family: "Raleway";
