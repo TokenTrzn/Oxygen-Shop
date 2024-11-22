@@ -60,6 +60,8 @@
             display: inline-block;
             text-align: center;
             vertical-align: middle;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
 
             &__name {
                 font-family: 'Raleway';
@@ -75,6 +77,14 @@
                 font-family: 'Open Sans';
                 font-weight: 300;
                 line-height: 4rem;
+            }
+
+            &__offer {
+                font-family: 'Raleway';
+                font-weight: 700;
+                font-size: .75rem;
+                line-height: .8rem;
+                color: #13253B;
             }
 
             @media only screen and (min-width: 1000px) {
@@ -140,6 +150,7 @@
             flex-direction: column;
             align-items: center;
             text-align: start;
+            padding-bottom: 3rem;
         }
     }
 

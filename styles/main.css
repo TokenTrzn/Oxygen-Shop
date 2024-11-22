@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   color: var(--blue-color);
   font-family: "Raleway";
@@ -14,6 +15,11 @@
 .header__menu__item {
   display: inline-block;
   padding: 1rem 3rem 1rem 2rem;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.2rem;
 }
 .header__menu__item:hover {
   color: black;
@@ -175,16 +181,17 @@
   border-radius: 0.3rem;
   text-align: start;
   padding: 1rem;
-  margin: 1rem auto;
+  margin: 1rem 1rem;
   margin-bottom: 2rem;
-  width: 80%;
-  position: relative;
+  width: 100%;
 }
 @media only screen and (min-width: 1000px) {
   .features__card {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 2rem auto;
   }
   .features__card #red-feature {
     border-bottom: 3px solid #FB3B64;
@@ -194,7 +201,7 @@
   .features__card #blue-feature {
     border-bottom: 3px solid #08A6E4;
     padding-right: 5rem;
-    padding-left: 2rem;
+    padding-left: 3rem;
   }
   .features__card #green-feature {
     border-bottom: 4px solid #55DFB4;
@@ -226,6 +233,9 @@
 @media only screen and (min-width: 1000px) {
   .features__card__images__macbook {
     content: url(../resources/Macbook\ Desktop.png);
+    position: absolute;
+    left: 6%;
+    transform: scale(0.8);
   }
 }
 .features__card__images__red-circle {
@@ -250,6 +260,9 @@
 @media only screen and (min-width: 1000px) {
   .features__card__images__iphone {
     content: url(../resources/iPhone2\ 1.png);
+    transform: scale(0.9);
+    position: absolute;
+    left: 15%;
   }
 }
 .features__card__images__blue-circle {
@@ -285,6 +298,11 @@
 @media only screen and (min-width: 1000px) {
   .features__card__images-exc__trumpet {
     content: url(../resources/Trumpet\ 1.png);
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .features__card__images-exc {
+    margin-left: 12rem;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -328,6 +346,7 @@
   .excp-row {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 
@@ -381,6 +400,8 @@
   display: inline-block;
   text-align: center;
   vertical-align: middle;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .pricing__card__plan__name {
   font-family: "Raleway";
@@ -395,6 +416,13 @@
   font-family: "Open Sans";
   font-weight: 300;
   line-height: 4rem;
+}
+.pricing__card__plan__offer {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 0.8rem;
+  color: #13253B;
 }
 @media only screen and (min-width: 1000px) {
   .pricing__card__plan {
@@ -455,6 +483,7 @@
     flex-direction: column;
     align-items: center;
     text-align: start;
+    padding-bottom: 3rem;
   }
 }
 .pricing__services li {
@@ -636,8 +665,19 @@ input[type=text] {
 }
 
 input[type=checkbox] {
+  border: 1px solid #95989A;
   position: absolute;
   top: 2%;
+  appearance: none;
+  width: 20px;
+  border-radius: 5px;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+input[type=checkbox]:checked::after {
+  content: "✓";
+  color: #08A6E4;
 }
 @media only screen and (min-width: 1000px) {
   input[type=checkbox] {
@@ -654,10 +694,6 @@ input[type=checkbox] {
   }
 }
 
-#email,
-#phone {
-  margin-bottom: 3rem;
-}
 @media only screen and (min-width: 1000px) {
   #email,
   #phone {
@@ -673,7 +709,7 @@ label {
   line-height: 1rem;
   color: #707070;
   display: inline-block;
-  margin: 0 1.5rem 0 1.5rem;
+  margin: 0 1.5rem 0 2rem;
 }
 
 .footer {
