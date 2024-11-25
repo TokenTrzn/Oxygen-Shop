@@ -85,7 +85,7 @@
     font-size: 3.2rem;
   }
   .shop__btn-1 {
-    padding: 1.5rem 16rem;
+    padding: 1.5rem 12rem;
   }
 }
 
@@ -173,17 +173,21 @@
 .features {
   background-color: #F7F7F7;
   text-align: center;
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.8rem;
+}
+@media only screen and (min-width: 1000px) {
+  .features {
+    padding: 1rem 3rem;
+  }
 }
 .features__card {
   background-color: #FFFFFF;
   border: 1px solid #E8E9ED;
   border-radius: 0.3rem;
   text-align: start;
-  padding: 1rem;
   margin: 1rem 1rem;
   margin-bottom: 2rem;
-  width: 100%;
+  padding-top: 2rem;
 }
 @media only screen and (min-width: 1000px) {
   .features__card {
@@ -192,6 +196,7 @@
     flex-direction: row;
     align-items: center;
     margin: 2rem auto;
+    width: 90%;
   }
   .features__card #red-feature {
     border-bottom: 3px solid #FB3B64;
@@ -217,7 +222,6 @@
 }
 @media only screen and (min-width: 1000px) {
   .features__card__images {
-    flex: 1;
     max-width: 50%;
     padding: 2rem;
   }
@@ -266,7 +270,7 @@
   }
 }
 .features__card__images__blue-circle {
-  margin: 0 auto 1rem 2rem;
+  margin: 0 auto 1rem 3rem;
 }
 @media only screen and (min-width: 1000px) {
   .features__card__images__blue-circle {
@@ -274,14 +278,7 @@
   }
 }
 .features__card__images-exc {
-  max-width: 258px;
-  min-width: 258px;
-  margin: 0 auto;
   position: relative;
-}
-.features__card__images-exc__green-rectangle {
-  z-index: 0;
-  width: 100%;
 }
 @media only screen and (min-width: 1000px) {
   .features__card__images-exc__green-rectangle {
@@ -302,8 +299,11 @@
 }
 @media only screen and (min-width: 1000px) {
   .features__card__images-exc {
-    margin-left: 12rem;
+    margin-left: 1rem;
   }
+}
+.features__card__text {
+  padding: 1rem;
 }
 @media only screen and (min-width: 1000px) {
   .features__card__text {
@@ -339,6 +339,24 @@
     font-size: 1rem;
     line-height: 1.3rem;
     padding-bottom: 2rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .features #red-card,
+  .features #blue-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.features #green-card {
+  padding-top: 0;
+}
+@media only screen and (min-width: 1000px) {
+  .features #green-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
