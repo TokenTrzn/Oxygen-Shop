@@ -247,6 +247,10 @@
     #green-feature {
         max-width: 75%;
         padding: 1rem;
+
+        @media only screen and (min-width: 1000px) {
+            padding-left: 3rem;
+        }
     }
 }
 

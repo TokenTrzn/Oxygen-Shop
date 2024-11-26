@@ -440,6 +440,11 @@
   max-width: 75%;
   padding: 1rem;
 }
+@media only screen and (min-width: 1000px) {
+  .features #green-feature {
+    padding-left: 3rem;
+  }
+}
 
 @media only screen and (min-width: 1000px) {
   .excp-row {
