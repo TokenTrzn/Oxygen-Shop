@@ -106,7 +106,7 @@
 .info {
   text-align: center;
   position: relative;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
 }
 .info__title {
   font-family: "Raleway";
@@ -122,6 +122,7 @@
 @media only screen and (min-width: 1000px) {
   .info__item {
     display: inline-block;
+    vertical-align: top;
     padding: 2rem 4rem 2rem 4rem;
   }
 }
@@ -143,13 +144,33 @@
   position: absolute;
   left: 44%;
 }
+.info__images__person {
+  position: absolute;
+  left: 46%;
+}
+@media only screen and (min-width: 1000px) {
+  .info__images__person {
+    left: 50%;
+  }
+}
 .info__images__eye {
   position: absolute;
-  top: 1rem;
+  top: 14px;
+}
+@media only screen and (min-width: 1000px) {
+  .info__images__eye {
+    position: absolute;
+  }
 }
 .info__images__catalog {
   position: absolute;
   top: 0.5rem;
+}
+@media only screen and (min-width: 1000px) {
+  .info__images__catalog {
+    position: absolute;
+    left: 60px;
+  }
 }
 .info__number {
   font-family: "Raleway";
@@ -169,6 +190,11 @@
   text-align: center;
   color: #A5A5A5;
 }
+@media only screen and (min-width: 1000px) {
+  .info__description {
+    text-wrap: wrap;
+  }
+}
 
 .features {
   background-color: #F7F7F7;
@@ -187,7 +213,8 @@
   text-align: start;
   margin: 1rem 1rem;
   margin-bottom: 2rem;
-  padding-top: 2rem;
+  padding: 1rem;
+  max-height: 370px;
 }
 @media only screen and (min-width: 1000px) {
   .features__card {
@@ -197,21 +224,7 @@
     align-items: center;
     margin: 2rem auto;
     width: 90%;
-  }
-  .features__card #red-feature {
-    border-bottom: 3px solid #FB3B64;
-    padding-right: 5rem;
-    padding-left: 2rem;
-  }
-  .features__card #blue-feature {
-    border-bottom: 3px solid #08A6E4;
-    padding-right: 5rem;
-    padding-left: 3rem;
-  }
-  .features__card #green-feature {
-    border-bottom: 4px solid #55DFB4;
-    padding-right: 5rem;
-    padding-left: 2rem;
+    max-width: 1100px;
   }
 }
 .features__card__images {
@@ -275,10 +288,16 @@
 @media only screen and (min-width: 1000px) {
   .features__card__images__blue-circle {
     content: url(../resources/Big\ Blue\ Circle.png);
+    transform: scale(0.9);
   }
 }
 .features__card__images-exc {
   position: relative;
+}
+@media only screen and (min-width: 1000px) {
+  .features__card__images-exc {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .features__card__images-exc__green-rectangle {
@@ -295,6 +314,7 @@
 @media only screen and (min-width: 1000px) {
   .features__card__images-exc__trumpet {
     content: url(../resources/Trumpet\ 1.png);
+    transform: scale(0.9);
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -302,13 +322,37 @@
     margin-left: 1rem;
   }
 }
-.features__card__text {
-  padding: 1rem;
+.features__card__images-exc-desktop {
+  position: relative;
+}
+@media only screen and (min-width: 1000px) {
+  .features__card__images-exc-desktop {
+    width: 60%;
+    background-color: #55DFB4;
+    height: 20rem;
+    border-radius: 4px;
+    border: 1px solid #E8E9ED;
+  }
+}
+.features__card__images-exc-desktop__trumpet {
+  display: none;
+  position: relative;
+  width: 85%;
+  height: auto;
+  transform: translate(0%, 12%);
+}
+@media only screen and (min-width: 800px) {
+  .features__card__images-exc-desktop__trumpet {
+    display: block;
+    transform: translate(16%, 3em);
+    width: 70%;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .features__card__text {
     flex: 1;
     max-width: 50%;
+    padding-left: 2rem;
   }
 }
 .features__card__text__title {
@@ -341,6 +385,36 @@
     padding-bottom: 2rem;
   }
 }
+.features__card__text__border-bottom {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .features__card__text__border-bottom {
+    display: block;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  .features__card__text__border-bottom--red {
+    border: 4px solid #FB3B64;
+  }
+  .features__card__text__border-bottom--blue {
+    border: 4px solid #08A6E4;
+  }
+  .features__card__text__border-bottom--green {
+    border: 4px solid #55DFB4;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .features__desktop-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    width: 90%;
+  }
+}
 @media only screen and (min-width: 1000px) {
   .features #red-card,
   .features #blue-card {
@@ -350,14 +424,19 @@
   }
 }
 .features #green-card {
-  padding-top: 0;
+  padding: 0;
 }
 @media only screen and (min-width: 1000px) {
   .features #green-card {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
   }
+}
+.features #green-feature {
+  max-width: 75%;
+  padding: 1rem;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -372,8 +451,13 @@
   font-family: "Raleway";
   font-weight: 400;
   font-size: 2.25rem;
-  padding-top: 5rem;
+  padding-top: 12rem;
   text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+  .pricing__title {
+    padding-top: 5rem;
+  }
 }
 
 .pricing {
@@ -386,6 +470,7 @@
   position: relative;
   border-radius: 1rem;
   margin: 1rem 1.2rem 3rem 1.2rem;
+  max-width: 370px;
 }
 .pricing__card.basic {
   border: 1px solid #FB3B64;
@@ -395,6 +480,7 @@
 }
 .pricing__card.basic .pricing__card__plan__price {
   color: #FB3B64;
+  padding-bottom: 0.75rem;
 }
 .pricing__card.professional {
   border: 1px solid #07ACE6;
@@ -449,6 +535,7 @@
     align-items: center;
     width: 100%;
     padding-right: 0;
+    padding-bottom: 2rem;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -456,6 +543,7 @@
     display: flex;
     flex-direction: column;
     width: 30%;
+    max-width: 370px;
   }
 }
 .pricing__card:hover {
@@ -533,6 +621,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+    margin: 0 6rem;
   }
 }
 
