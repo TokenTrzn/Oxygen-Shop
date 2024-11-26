@@ -14,7 +14,7 @@
 
         &__item {
             display: inline-block;
-            padding: 1rem 3rem 1rem 2rem;
+            padding: 1rem 3rem 1rem 3rem;
             font-family: 'Open Sans';
             font-weight: 700;
             font-size: .75rem;
@@ -24,6 +24,7 @@
             &:hover {
                 color: black;
                 border-bottom: 2px solid var(--blue-color);
+                padding-bottom: 2.2rem;
                 padding-bottom: .2rem;
             }
         }

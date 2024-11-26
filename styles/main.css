@@ -14,7 +14,7 @@
 }
 .header__menu__item {
   display: inline-block;
-  padding: 1rem 3rem 1rem 2rem;
+  padding: 1rem 3rem 1rem 3rem;
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 0.75rem;
@@ -24,6 +24,7 @@
 .header__menu__item:hover {
   color: black;
   border-bottom: 2px solid var(--blue-color);
+  padding-bottom: 2.2rem;
   padding-bottom: 0.2rem;
 }
 .header__icon {
@@ -70,7 +71,7 @@
   font-family: "Open Sans";
   color: var(--white-color);
   background-color: var(--blue-color);
-  border-radius: 30px;
+  border-radius: 40px;
   border: none;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -123,7 +124,7 @@
   .info__item {
     display: inline-block;
     vertical-align: top;
-    padding: 2rem 4rem 2rem 4rem;
+    padding: 2rem 6rem 2rem 6rem;
   }
 }
 .info__images {
@@ -215,6 +216,7 @@
   margin-bottom: 2rem;
   padding: 1rem;
   max-height: 370px;
+  padding-top: 1.5rem;
 }
 @media only screen and (min-width: 1000px) {
   .features__card {
@@ -344,7 +346,7 @@
 @media only screen and (min-width: 800px) {
   .features__card__images-exc-desktop__trumpet {
     display: block;
-    transform: translate(16%, 3em);
+    transform: translate(16%, 5em);
     width: 70%;
   }
 }
@@ -395,13 +397,13 @@
     margin-bottom: 2rem;
   }
   .features__card__text__border-bottom--red {
-    border: 4px solid #FB3B64;
+    border: 3px solid #FB3B64;
   }
   .features__card__text__border-bottom--blue {
-    border: 4px solid #08A6E4;
+    border: 3px solid #08A6E4;
   }
   .features__card__text__border-bottom--green {
-    border: 4px solid #55DFB4;
+    border: 3px solid #55DFB4;
   }
 }
 @media only screen and (min-width: 1000px) {
