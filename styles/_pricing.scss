@@ -110,22 +110,6 @@
         }
     }
 
-    &__card:hover {
-        transform: scale(1.1);
-        &.basic {
-            box-shadow: 0px 4px 20px #FB3B64;
-        }
-
-        &.professional {
-            box-shadow: 0px 4px 20px #07ACE6;
-        }
-
-        &.premium {
-            box-shadow: 0px 4px 20px #55DFB4;
-        }
-
-    }
-
     &__btn {
         font-family: 'Open Sans';
         font-weight: 700;
@@ -192,5 +176,21 @@
         justify-content: space-evenly;
         align-items: flex-start;
         margin: 0 6rem;
+
+        &__card:hover {
+            transform: scale(1.1);
+            &.basic {
+                box-shadow: 0px 4px 20px #FB3B64;
+            }
+    
+            &.professional {
+                box-shadow: 0px 4px 20px #07ACE6;
+            }
+    
+            &.premium {
+                box-shadow: 0px 4px 20px #55DFB4;
+            }
+    
+        }
     }
 }

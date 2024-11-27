@@ -245,11 +245,12 @@
     }
 
     #green-feature {
-        max-width: 75%;
+        max-width: 90%;
         padding: 1rem;
 
         @media only screen and (min-width: 1000px) {
             padding-left: 3rem;
+            max-width: 75%;
         }
     }
 }
@@ -259,5 +260,13 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+    }
+}
+
+br {
+    display: none;
+
+    @media only screen and (min-width: 1000px) {
+        display: block;
     }
 }
