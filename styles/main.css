@@ -20,12 +20,11 @@
   font-size: 0.75rem;
   line-height: 1rem;
   letter-spacing: 0.2rem;
+  padding: 1.6rem 5rem;
 }
 .header__menu__item:hover {
   color: black;
-  border-bottom: 2px solid var(--blue-color);
-  padding-bottom: 2.2rem;
-  padding-bottom: 0.2rem;
+  border-bottom: 3px solid var(--blue-color);
 }
 .header__icon {
   position: absolute;

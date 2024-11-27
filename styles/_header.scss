@@ -20,12 +20,11 @@
             font-size: .75rem;
             line-height: 1rem;
             letter-spacing: .2rem;
+            padding: 1.6rem 5rem;   
 
             &:hover {
                 color: black;
-                border-bottom: 2px solid var(--blue-color);
-                padding-bottom: 2.2rem;
-                padding-bottom: .2rem;
+                border-bottom: 3px solid var(--blue-color);
             }
         }
     }
