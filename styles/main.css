@@ -26,10 +26,32 @@
   color: black;
   border-bottom: 3px solid var(--blue-color);
 }
-.header__icon {
+.header__menu__icon, .header__menu__close-icon {
   position: absolute;
   top: 4%;
   right: 8%;
+}
+.header__menu.show {
+  padding-top: 1rem;
+  display: block;
+}
+.header__menu.show li {
+  display: block;
+  color: #A5A5A5;
+  padding: 0.5rem 1rem;
+  font-size: 0.6875rem;
+  letter-spacing: 0.2rem;
+}
+.header__menu.show li:hover {
+  font-weight: bold;
+  border: none;
+  color: black;
+}
+.header__menu.show #last {
+  padding-bottom: 2rem;
+}
+.header .hidden {
+  display: none;
 }
 @media only screen and (min-width: 1000px) {
   .header {
@@ -43,7 +65,7 @@
   .header__menu__item {
     color: #A5A5A5;
   }
-  .header__icon {
+  .header__menu__icon {
     display: none;
   }
   .header__title {
@@ -865,6 +887,20 @@ label {
 
 #twitter-icon {
   margin-right: 1rem;
+}
+
+.scrollIndicator {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 0.2rem;
+  background-color: #08A6E4;
+  z-index: 5;
+}
+@media only screen and (min-width: 1000px) {
+  .scrollIndicator {
+    height: 0.5rem;
+  }
 }
 
 :root {
