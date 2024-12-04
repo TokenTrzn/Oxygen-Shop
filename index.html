@@ -8,10 +8,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script src="./scripts/menu.js" defer></script>
+    <script src="scripts/menu.js" defer></script>    
     <script src="./scripts/scrollIndicator.js" defer></script>
     <script src="./scripts/returnToTop.js" defer></script>
     <script src="./scripts/formValidation.js" defer></script>
+    <script src="./scripts/coinSelector.js" defer></script>
     <title>OXYGEN Shop</title>
 </head>
 
@@ -122,13 +123,20 @@
         </div>
 
     </section>
+    <div class="pricing__title-div">
+        <h2 class="pricing__title">Pricing</h2>
 
-    <h2 class="pricing__title">Pricing</h2>
+        <select id="coin-selector" class="pricing__coin-selector">
+            <option class="pricing__coin-selector__option" value="eur">EUR</option>
+            <option class="pricing__coin-selector__option" value="usd" selected>USD</option>
+            <option class="pricing__coin-selector__option" value="gbp">GBP</option>
+        </select>
+    </div>    
     <section class="pricing">
         <article class="pricing__card basic">
             <div class="pricing__card__plan">
                 <p class="pricing__card__plan__name">Basic</p>
-                <p class="pricing__card__plan__price">$0</p>
+                <p class="pricing__card__plan__price" id="basicPrice">$0</p>
             </div>
             <ul class="pricing__services">
                 <li><span>☑</span>100 MB HDD</li>
@@ -143,7 +151,7 @@
         <article class="pricing__card professional">
             <div class="pricing__card__plan">
                 <p class="pricing__card__plan__name">Professional</p>
-                <p class="pricing__card__plan__price">$25</p>
+                <p class="pricing__card__plan__price" id="professionalPrice">$25</p>
                 <p class="pricing__card__plan__offer">Limited offer</p>
             </div>
             <ul class="pricing__services">
@@ -159,7 +167,7 @@
         <article class="pricing__card premium">
             <div class="pricing__card__plan">
                 <p class="pricing__card__plan__name">Premium</p>
-                <p class="pricing__card__plan__price">$60</p>
+                <p class="pricing__card__plan__price" id="premiumPrice">$60</p>
                 <p class="pricing__card__plan__offer">Limited offer</p>
             </div>
             <ul class="pricing__services">
