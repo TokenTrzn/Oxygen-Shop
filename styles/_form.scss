@@ -122,6 +122,10 @@
         padding-left: 2em;
         justify-content: center;
     }
+
+    .invalid {
+        border-color: red;
+    }
 }
 
 .form__icon {
@@ -158,6 +162,8 @@ input[type="checkbox"] {
     cursor: pointer;
 
     &:checked {
+
+        border-color: #95989A;
 
         &::after {
             content: '✓';
@@ -196,4 +202,6 @@ label {
     display: inline-block;
     margin: 0 1.5rem 0 2rem;
 }
+
+
 

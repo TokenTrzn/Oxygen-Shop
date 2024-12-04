@@ -1,0 +1,20 @@
+.returnToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #08A6E4;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    display: none;
+    z-index: 50;
+}
+
+.returnToTop.show {
+    display: block;
+}

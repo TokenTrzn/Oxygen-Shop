@@ -1,1 +1,1 @@
-import '../scripts/menu'
+import './menu.js'

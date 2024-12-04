@@ -73,6 +73,20 @@
   }
 }
 
+.scrollIndicator {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 0.2rem;
+  background-color: #08A6E4;
+  z-index: 5;
+}
+@media only screen and (min-width: 1000px) {
+  .scrollIndicator {
+    height: 0.5rem;
+  }
+}
+
 .shop__title {
   text-align: center;
   font-family: "Raleway";
@@ -786,6 +800,9 @@ br {
     justify-content: center;
   }
 }
+.form .invalid {
+  border-color: red;
+}
 
 .form__icon {
   display: inline-block;
@@ -819,6 +836,9 @@ input[type=checkbox] {
   height: 20px;
   text-align: center;
   cursor: pointer;
+}
+input[type=checkbox]:checked {
+  border-color: #95989A;
 }
 input[type=checkbox]:checked::after {
   content: "✓";
@@ -857,6 +877,27 @@ label {
   margin: 0 1.5rem 0 2rem;
 }
 
+.returnToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #08A6E4;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  display: none;
+  z-index: 50;
+}
+
+.returnToTop.show {
+  display: block;
+}
+
 .footer {
   padding: 1rem 1rem;
   position: relative;
@@ -887,20 +928,6 @@ label {
 
 #twitter-icon {
   margin-right: 1rem;
-}
-
-.scrollIndicator {
-  position: fixed;
-  top: 0;
-  width: 0%;
-  height: 0.2rem;
-  background-color: #08A6E4;
-  z-index: 5;
-}
-@media only screen and (min-width: 1000px) {
-  .scrollIndicator {
-    height: 0.5rem;
-  }
 }
 
 :root {
