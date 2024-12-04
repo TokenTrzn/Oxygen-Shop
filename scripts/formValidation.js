@@ -1,4 +1,4 @@
-const formButton = document.getElementById('form')
+const form = document.getElementById('form')
 
 form.addEventListener('submit', (event) => {
     event.preventDefault()
@@ -11,6 +11,7 @@ form.addEventListener('submit', (event) => {
     const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
     const checkBox = document.getElementById('checkbox')
+    const isChecked = checkBox.checked
 
     let isValid = true
 
@@ -36,6 +37,20 @@ form.addEventListener('submit', (event) => {
     }
 
     if (isValid) {
-        alert('Formulario Válido')
+        const formData = {
+            name: nameValue,
+            email: emailValue,
+            isChecked: isChecked
+        }
+
+        fetch('https://jsonplaceholder.typicode.com/posts', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData) 
+        }).then(response => {
+            return response.json()
+        }).then(json => {
+            console.log(json)
+        })
     }
 })
