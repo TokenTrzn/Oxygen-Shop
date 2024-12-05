@@ -62,8 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let automaticInterval
     const automaticItem = () => {
         automaticInterval = setInterval(() => {
-            console.log(items.length)
-            console.log(itemIndex)
             toNextImg()
         }, 5000)
     }
