@@ -13,7 +13,7 @@
     <script src="./scripts/returnToTop.js" defer></script>
     <script src="./scripts/formValidation.js" defer></script>
     <script src="./scripts/coinSelector.js" defer></script>
-    <!--<script src="./scripts/popUp.js"></script>-->
+    <script src="./scripts/popUp.js"></script>
     <title>OXYGEN Shop</title>
 </head>
 
@@ -213,10 +213,13 @@
         </div>
     </form>
 
+    <div class="overlay" id="overlay"></div>
     <section class="popUp" id="popUp">
         <div class="popUp__content">
-            <h2 class="popUp__title">Subscribe to our newsletter.</h2>
-            <img class="popUp__icon" id="exitIcon" src="resources/close.png" />
+            <div class="popUp__firstRow">
+                <h2 class="popUp__title">Subscribe to our newsletter</h2>
+                <img class="popUp__icon" id="exitIcon" src="resources/close_icon.png" />
+            </div>
             <p class="popUp__email">EMAIL</p>
             <input class="popUp__email-input" id="email-input">
             <p class="popUp__error" id="popUp-error">error</p>
@@ -224,7 +227,9 @@
         </div>
     </section>
 
-    <button class="returnToTop" id="returnToTop">Return to the top</button>
+    <button class="returnToTop" id="returnToTop">
+        <img class="returnToTop__icon" src="./resources/to_top_icon.png"/>
+    </button>
 
     <footer class="footer">
         <h2 class="footer__title">OXYGENShop</h2>
