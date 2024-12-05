@@ -912,9 +912,21 @@ label {
   width: 3rem;
   height: 3rem;
 }
+@media only screen and (min-width: 1000px) {
+  .returnToTop {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+  }
+}
 .returnToTop__icon {
   color: white;
   transform: scale(1.4);
+}
+@media only screen and (min-width: 1000px) {
+  .returnToTop__icon {
+    transform: scale(2);
+  }
 }
 .returnToTop:hover {
   transform: scale(1.1);
@@ -1041,14 +1053,21 @@ label {
   }
 }
 .popUp__email-input.invalid {
+  border-bottom: 1px solid;
   border-color: red;
 }
 .popUp__error {
   display: none;
-  color: red;
 }
 .popUp__error.show {
   display: block;
+  color: red;
+  font-size: 0.8rem;
+}
+@media only screen and (min-width: 1000px) {
+  .popUp__error.show {
+    font-size: 1.5rem;
+  }
 }
 .popUp__btn {
   width: 60%;
@@ -1058,6 +1077,7 @@ label {
   height: 2rem;
   padding: 0.5rem 1.6rem;
   border: none;
+  cursor: pointer;
 }
 @media only screen and (min-width: 1000px) {
   .popUp__btn {

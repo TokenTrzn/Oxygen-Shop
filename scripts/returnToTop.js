@@ -1,7 +1,7 @@
 const returnToTop = document.getElementById('returnToTop')
 
 const handleScroll = () => {
-    if (window.scrollY > 1000) { 
+    if (window.scrollY > 500) { 
         returnToTop.classList.add('show');
     } else {
         returnToTop.classList.remove('show'); 

@@ -84,16 +84,22 @@
     }
 
     &__email-input.invalid {
+        border-bottom: 1px solid;
         border-color: red;
     }
 
     &__error {
         display: none;
-        color: red;
     }
 
     &__error.show {
         display: block;
+        color: red;
+        font-size: .8rem;
+
+        @media only screen and (min-width: 1000px) {
+            font-size: 1.5rem;
+        }
     }
 
     &__btn {
@@ -104,6 +110,7 @@
         height: 2rem;
         padding: .5rem 1.6rem;
         border: none;
+        cursor: pointer;
 
         @media only screen and (min-width: 1000px) {
             font-size: 1.8rem;
