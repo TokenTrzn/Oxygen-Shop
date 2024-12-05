@@ -520,6 +520,7 @@ br {
 }
 .pricing__title-div {
   text-align: center;
+  align-items: center;
 }
 .pricing__card {
   position: relative;
