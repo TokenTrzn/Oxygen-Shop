@@ -8,6 +8,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="scripts/menu.js" defer></script>    
+    <script src="./scripts/scrollIndicator.js" defer></script>
+    <script src="./scripts/returnToTop.js" defer></script>
+    <script src="./scripts/formValidation.js" defer></script>
+    <script src="./scripts/coinSelector.js" defer></script>
     <title>OXYGEN Shop</title>
 </head>
 
@@ -18,10 +23,14 @@
             <li class="header__menu__item">WHY US</li>
             <li class="header__menu__item">BENEFITS</li>
             <li class="header__menu__item">PRICES</li>
-            <li class="header__menu__item">CONTACT</li>
+            <li class="header__menu__item" id="last">CONTACT</li>
         </ul>
-        <img class="header__icon" src="resources/Menu.png">
+        <img class="header__menu__icon" src="resources/Menu.png">
+        <img class="header__menu__close-icon hidden" src="resources/close_icon.png">
     </header>
+
+    <div class="scrollIndicator" id="scrollBar"></div>
+
     <section class="shop">
         <h2 class="shop__title">Sell More!</h2>
         <p class="shop__description">Open shop on our platform and increase your sales</p>
@@ -74,7 +83,7 @@
                 <p class="features__card__text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 <p>
-                <hr class="features__card__text__border-bottom features__card__text__border-bottom--red">
+                    <hr class="features__card__text__border-bottom features__card__text__border-bottom--red">
             </div>
         </article>
         <article class="features__card" id="blue-card">
@@ -96,7 +105,8 @@
             <article class="features__card" id="green-card">
                 <div class="features__card__text" id="green-feature">
                     <p class="features__card__text__title">Increase recognition your brand!</p>
-                    <p class="features__card__text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    <p class="features__card__text__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
                     <hr class="features__card__text__border-bottom features__card__text__border-bottom--green">
@@ -107,19 +117,26 @@
                 </div>
             </article>
             <div class="features__card__images-exc-desktop">
-                <img src="resources/Trumpet 1.png" class="features__card__images-exc-desktop__trumpet"/>
+                <img src="resources/Trumpet 1.png" class="features__card__images-exc-desktop__trumpet" />
             </div>
 
         </div>
-        
-    </section>
 
-    <h2 class="pricing__title">Pricing</h2>
+    </section>
+    <div class="pricing__title-div">
+        <h2 class="pricing__title">Pricing</h2>
+
+        <select id="coin-selector" class="pricing__coin-selector">
+            <option class="pricing__coin-selector__option" value="eur">EUR</option>
+            <option class="pricing__coin-selector__option" value="usd" selected>USD</option>
+            <option class="pricing__coin-selector__option" value="gbp">GBP</option>
+        </select>
+    </div>    
     <section class="pricing">
         <article class="pricing__card basic">
             <div class="pricing__card__plan">
                 <p class="pricing__card__plan__name">Basic</p>
-                <p class="pricing__card__plan__price">$0</p>
+                <p class="pricing__card__plan__price" id="basicPrice">$0</p>
             </div>
             <ul class="pricing__services">
                 <li><span>☑</span>100 MB HDD</li>
@@ -134,7 +151,7 @@
         <article class="pricing__card professional">
             <div class="pricing__card__plan">
                 <p class="pricing__card__plan__name">Professional</p>
-                <p class="pricing__card__plan__price">$25</p>
+                <p class="pricing__card__plan__price" id="professionalPrice">$25</p>
                 <p class="pricing__card__plan__offer">Limited offer</p>
             </div>
             <ul class="pricing__services">
@@ -150,7 +167,7 @@
         <article class="pricing__card premium">
             <div class="pricing__card__plan">
                 <p class="pricing__card__plan__name">Premium</p>
-                <p class="pricing__card__plan__price">$60</p>
+                <p class="pricing__card__plan__price" id="premiumPrice">$60</p>
                 <p class="pricing__card__plan__offer">Limited offer</p>
             </div>
             <ul class="pricing__services">
@@ -163,7 +180,7 @@
             <button class="pricing__btn">Begin</button>
         </article>
     </section>
-    <form class="form" action="" method="">
+    <form class="form" id="form">
         <h2 class="form__title">Any Questions?</h2>
         <p class="form__description">Leave your email addres or call us!</p>
         <div class="form__example_div" id="email">
@@ -176,11 +193,11 @@
         </div>
         <div class="form__name-input">
             <p class="form__placeholder">NAME</p>
-            <input name="form__input" type="text" />
+            <input class="form__name" name="form__input" id="name-input" type="text" />
         </div>
         <div class="form__email-input">
             <p class="form__placeholder">EMAIL</p>
-            <input name="form__input" id="email-input" type="text" />
+            <input class="form__email" name="form__input" id="email-input" type="text" />
         </div>
         <div class="form__data-protection">
             <input name="checkbox" id="checkbox" type="checkbox" />
@@ -191,16 +208,18 @@
                 Directive 95/46/EC (Data Protection Directive)</label>
         </div>
         <div class="form__container-btn">
-            <button class="form__btn">Send</button>
+            <button class="form__btn" id="form__btn" type="submit">Send</button>
         </div>
     </form>
 
-<footer class="footer">
+    <button class="returnToTop" id="returnToTop">Return to the top</button>
+
+    <footer class="footer">
         <h2 class="footer__title">OXYGENShop</h2>
         <p class="footer__description">© 2022 OXYGEN, All Rights Reserved</p>
         <div class="footer__icons">
             <img id="twitter-icon" class="footer__icon" src="./resources/Twitter (2) 2.png" />
-            <img id="facebook-icon" class="footer__icon" src="./resources/Facebook.png" />    
+            <img id="facebook-icon" class="footer__icon" src="./resources/Facebook.png" />
         </div>
     </footer>
 </body>

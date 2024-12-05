@@ -27,13 +27,43 @@
                 border-bottom: 3px solid var(--blue-color);
             }
         }
+
+        &__icon,
+        &__close-icon {
+            position: absolute;
+            top: 4%;
+            right: 8%;
+        }
+
+        
     }
 
-    &__icon {
-        position: absolute;
-        top: 4%;
-        right: 8%;
+    &__menu.show {
+        padding-top: 1rem;
+        display: block;
+        li {
+            display: block;
+            color: #A5A5A5;
+            padding: .5rem 1rem;
+            font-size: 0.6875rem;
+            letter-spacing: .2rem;
+
+            &:hover {
+                font-weight: bold;
+                border: none;
+                color: black;
+            }
+        }
+
+        #last {
+            padding-bottom: 2rem;
+        }
     }
+
+    .hidden {
+        display: none;
+    }
+    
 
     @media only screen and (min-width: 1000px) {
         display: flex;
@@ -46,11 +76,11 @@
             &__item {
                 color: #A5A5A5;
             }
-        }
 
-        &__icon {
-            display: none;
-        }
+            &__icon {
+                display: none;
+            }
+        }        
 
         &__title {
             padding-left: 4rem;

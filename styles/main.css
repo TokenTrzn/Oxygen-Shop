@@ -26,10 +26,32 @@
   color: black;
   border-bottom: 3px solid var(--blue-color);
 }
-.header__icon {
+.header__menu__icon, .header__menu__close-icon {
   position: absolute;
   top: 4%;
   right: 8%;
+}
+.header__menu.show {
+  padding-top: 1rem;
+  display: block;
+}
+.header__menu.show li {
+  display: block;
+  color: #A5A5A5;
+  padding: 0.5rem 1rem;
+  font-size: 0.6875rem;
+  letter-spacing: 0.2rem;
+}
+.header__menu.show li:hover {
+  font-weight: bold;
+  border: none;
+  color: black;
+}
+.header__menu.show #last {
+  padding-bottom: 2rem;
+}
+.header .hidden {
+  display: none;
 }
 @media only screen and (min-width: 1000px) {
   .header {
@@ -43,11 +65,25 @@
   .header__menu__item {
     color: #A5A5A5;
   }
-  .header__icon {
+  .header__menu__icon {
     display: none;
   }
   .header__title {
     padding-left: 4rem;
+  }
+}
+
+.scrollIndicator {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 0.2rem;
+  background-color: #08A6E4;
+  z-index: 5;
+}
+@media only screen and (min-width: 1000px) {
+  .scrollIndicator {
+    height: 0.5rem;
   }
 }
 
@@ -482,6 +518,9 @@ br {
   padding-bottom: 6rem;
   padding: 2rem 1rem 2rem 1rem;
 }
+.pricing__title-div {
+  text-align: center;
+}
 .pricing__card {
   position: relative;
   border-radius: 1rem;
@@ -532,7 +571,7 @@ br {
   padding-top: 1rem;
 }
 .pricing__card__plan__price {
-  font-size: 2.875rem;
+  font-size: 2.7rem;
   font-family: "Open Sans";
   font-weight: 300;
   line-height: 4rem;
@@ -638,6 +677,21 @@ br {
   }
   .pricing__card:hover.premium {
     box-shadow: 0px 4px 20px #55DFB4;
+  }
+}
+.pricing__coin-selector {
+  height: 2rem;
+  width: 5rem;
+  border-radius: 1rem;
+  padding: 0.4rem;
+  box-shadow: 0px 4px 4px lightgray;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 1000px) {
+  .pricing__coin-selector {
+    width: 8rem;
   }
 }
 
@@ -764,6 +818,9 @@ br {
     justify-content: center;
   }
 }
+.form .invalid {
+  border-color: red;
+}
 
 .form__icon {
   display: inline-block;
@@ -797,6 +854,9 @@ input[type=checkbox] {
   height: 20px;
   text-align: center;
   cursor: pointer;
+}
+input[type=checkbox]:checked {
+  border-color: #95989A;
 }
 input[type=checkbox]:checked::after {
   content: "✓";
@@ -833,6 +893,27 @@ label {
   color: #707070;
   display: inline-block;
   margin: 0 1.5rem 0 2rem;
+}
+
+.returnToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #08A6E4;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  display: none;
+  z-index: 50;
+}
+
+.returnToTop.show {
+  display: block;
 }
 
 .footer {

@@ -1,10 +1,13 @@
 @use 'header.scss';
+@use 'scrollIndicator.scss';
 @use 'shop.scss';
 @use 'info.scss';
 @use 'features.scss';
 @use 'pricing.scss';
 @use 'form.scss';
+@use 'returnToTop.scss';
 @use 'footer.scss';
+
 
 :root {
     --black-color: #000000;
