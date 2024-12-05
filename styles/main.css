@@ -965,6 +965,7 @@ label {
   transform: translate(-50%, -50%);
   z-index: 10;
   border-radius: 1rem;
+  font-family: Raleway;
 }
 .popUp__firstRow {
   display: flex;
@@ -974,7 +975,20 @@ label {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   align-items: center;
 }
+@media only screen and (min-width: 1000px) {
+  .popUp__firstRow {
+    padding: 0.6rem 1rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .popUp__icon {
+    transform: scale(1.6);
+  }
+}
 .popUp__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
@@ -982,13 +996,52 @@ label {
   width: 18rem;
   padding: 0.4rem;
 }
+@media only screen and (min-width: 1000px) {
+  .popUp__content {
+    width: 40rem;
+    height: 20rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
 .popUp__title {
   margin: 0;
   font-size: 1rem;
 }
+@media only screen and (min-width: 1000px) {
+  .popUp__title {
+    font-size: 2.2rem;
+  }
+}
 .popUp p {
   line-height: 1.5rem;
   margin: 0.6rem 0;
+  width: 100%;
+  text-align: start;
+  padding-left: 1.8rem;
+  color: #08A6E4;
+}
+@media only screen and (min-width: 1000px) {
+  .popUp p {
+    font-size: 2rem;
+    padding-left: 4rem;
+    font-weight: 500;
+  }
+}
+.popUp__email-input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+  width: 80%;
+  font-size: 1rem;
+}
+@media only screen and (min-width: 1000px) {
+  .popUp__email-input {
+    font-size: 1.8rem;
+  }
+}
+.popUp__email-input.invalid {
+  border-color: red;
 }
 .popUp__error {
   display: none;
@@ -996,6 +1049,28 @@ label {
 }
 .popUp__error.show {
   display: block;
+}
+.popUp__btn {
+  width: 60%;
+  background-color: #08A6E4;
+  color: white;
+  border-radius: 2rem;
+  height: 2rem;
+  padding: 0.5rem 1.6rem;
+  border: none;
+}
+@media only screen and (min-width: 1000px) {
+  .popUp__btn {
+    font-size: 1.8rem;
+    width: 70%;
+    height: 3.5rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .popUp {
+    width: 40rem;
+    height: 20rem;
+  }
 }
 
 .popUp.show {

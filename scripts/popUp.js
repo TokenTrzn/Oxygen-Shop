@@ -7,7 +7,7 @@ const emailInput = document.getElementById('email-input')
 const overlay = document.getElementById('overlay')
 
 let isPopUpActive = false
-localStorage.removeItem('popUpClosed')
+
 
 const showPopUp = () => {
     if (!isPopUpActive && !localStorage.getItem('popUpClosed')) {
@@ -16,14 +16,6 @@ const showPopUp = () => {
         isPopUpActive = true
     }
 }
-
-const closePopUp = () => {
-    popUp.classList.remove('show')
-    overlay.classList.remove('show')
-    localStorage.setItem('popUpClosed', 'true')
-}
-
-setTimeout(showPopUp, 5000)
 
 const showPopUpOnScroll = () => {
     const scrollPosition = window.scrollY + window.innerHeight
@@ -35,6 +27,26 @@ const showPopUpOnScroll = () => {
     }
 }
 
+const closePopUp = () => {
+    popUp.classList.remove('show')
+    overlay.classList.remove('show')
+    localStorage.removeItem('popUpClosed')
+}
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && isPopUpActive) {
+        closePopUp()
+    }
+})
+
+overlay.addEventListener('click', () => {
+    if (isPopUpActive) {
+        closePopUp()
+    }
+})
+
+
+setTimeout(showPopUp, 5000)
 window.addEventListener('scroll', showPopUpOnScroll)
 closeBtn.addEventListener('click', closePopUp)
 
