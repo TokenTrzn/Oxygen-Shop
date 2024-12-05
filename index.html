@@ -8,11 +8,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script src="scripts/menu.js" defer></script>    
+    <script src="./scripts/menu.js" defer></script>    
     <script src="./scripts/scrollIndicator.js" defer></script>
     <script src="./scripts/returnToTop.js" defer></script>
     <script src="./scripts/formValidation.js" defer></script>
     <script src="./scripts/coinSelector.js" defer></script>
+    <script src="./scripts/popUp.js"></script>
     <title>OXYGEN Shop</title>
 </head>
 
@@ -25,8 +26,8 @@
             <li class="header__menu__item">PRICES</li>
             <li class="header__menu__item" id="last">CONTACT</li>
         </ul>
-        <img class="header__menu__icon" src="resources/Menu.png">
-        <img class="header__menu__close-icon hidden" src="resources/close_icon.png">
+        <img class="header__menu__icon" src="./resources/Menu.png">
+        <img class="header__menu__close-icon hidden" src="./resources/close_icon.png">
     </header>
 
     <div class="scrollIndicator" id="scrollBar"></div>
@@ -211,6 +212,17 @@
             <button class="form__btn" id="form__btn" type="submit">Send</button>
         </div>
     </form>
+
+    <section class="popUp" id="popUp">
+        <div class="popUp__content">
+            <h2 class="popUp__title">Subscribe to our newsletter.</h2>
+            <img class="popUp__icon" id="exitIcon" src="resources/close.png" />
+            <p class="popUp__email">EMAIL</p>
+            <input class="popUp__email-input" id="email-input">
+            <p class="popUp__error" id="popUp-error">error</p>
+            <button class="popUp__btn" id="popUp-btn">Send</button>
+        </div>
+    </section>
 
     <button class="returnToTop" id="returnToTop">Return to the top</button>
 

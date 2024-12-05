@@ -12,7 +12,7 @@ async function getExchange() {
             premium: 60
         }
 
-        const coinSymbol = {
+        const coinSymbols = {
             usd: '$',
             eur: '€',
             gbp: '£'
@@ -20,7 +20,6 @@ async function getExchange() {
 
         const exchange = json.usd[coinSelected]
 
-        console.log(exchange)
         const formatPrice = (price) => {
             return price % 1 === 0 ? price.toFixed(0) : price.toFixed(2)
         }
@@ -29,9 +28,9 @@ async function getExchange() {
         const professionalPrice = formatPrice(basePrices.professional * exchange)
         const premiumPrice = formatPrice(basePrices.premium * exchange)
 
-        document.getElementById('basicPrice').innerHTML = `${coinSymbol[coinSelected]}${basicPrice}`
-        document.getElementById('professionalPrice').innerHTML = `${coinSymbol[coinSelected]}${professionalPrice}`
-        document.getElementById('premiumPrice').innerHTML = `${coinSymbol[coinSelected]}${premiumPrice}`
+        document.getElementById('basicPrice').innerHTML = `${coinSymbols[coinSelected]}${basicPrice}`
+        document.getElementById('professionalPrice').innerHTML = `${coinSymbols[coinSelected]}${professionalPrice}`
+        document.getElementById('premiumPrice').innerHTML = `${coinSymbols[coinSelected]}${premiumPrice}`
     } catch (error) {
         console.log(error)
     }
