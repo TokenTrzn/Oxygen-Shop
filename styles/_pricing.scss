@@ -2,7 +2,7 @@
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 2.25rem;
-    padding-top: 12rem;
+    padding-top: 10rem;
     text-align: center;
 
     @media only screen and (min-width: 1000px) {
@@ -19,6 +19,7 @@
 
     &__title-div {
         text-align: center;
+        align-items: center;
     }
 
     &__card {
@@ -210,7 +211,7 @@
         margin-bottom: 2rem;
 
         @media only screen and (min-width: 1000px) {
-            width: 8rem;
+            width: 5rem;
         }
     }
 }

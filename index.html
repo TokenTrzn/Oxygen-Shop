@@ -13,7 +13,8 @@
     <script src="./scripts/returnToTop.js" defer></script>
     <script src="./scripts/formValidation.js" defer></script>
     <script src="./scripts/coinSelector.js" defer></script>
-    <script src="./scripts/popUp.js"></script>
+    <script src="./scripts/popUp.js" defer></script>
+    <script src="./scripts/slider.js" defer></script>
     <title>OXYGEN Shop</title>
 </head>
 
@@ -181,6 +182,20 @@
             <button class="pricing__btn">Begin</button>
         </article>
     </section>
+
+    <div id="slider" class="slider">
+        <img id="slider-img" class="slider__img" alt="Slider Image" src="./resources/sliderImg0.jpg"/>
+        <img id="slider-back" class="slider__back" alt="Back Icon" src="./resources/back_icon.png"/>
+        <img id="slider-next" class="slider__next" alt="Next Icon" src="./resources/next_icon.png"/>
+        <div id="slider-menu" class="slider__menu">
+            <span class="slider__menu__item" id="item0"></span>
+            <span class="slider__menu__item" id="item1"></span>
+            <span class="slider__menu__item" id="item2"></span>
+            <span class="slider__menu__item" id="item3"></span>
+            <span class="slider__menu__item" id="item4"></span>
+        </div>
+    </div>
+
     <form class="form" id="form">
         <h2 class="form__title">Any Questions?</h2>
         <p class="form__description">Leave your email addres or call us!</p>
@@ -213,18 +228,23 @@
         </div>
     </form>
 
+    <div class="overlay" id="overlay"></div>
     <section class="popUp" id="popUp">
-        <div class="popUp__content">
-            <h2 class="popUp__title">Subscribe to our newsletter.</h2>
-            <img class="popUp__icon" id="exitIcon" src="resources/close.png" />
+        <div class="popUp__firstRow">
+            <h2 class="popUp__title">Subscribe to our newsletter</h2>
+            <img class="popUp__icon" id="exitIcon" src="resources/close_icon.png" />
+        </div>
+        <div class="popUp__content">            
             <p class="popUp__email">EMAIL</p>
-            <input class="popUp__email-input" id="email-input">
-            <p class="popUp__error" id="popUp-error">error</p>
+            <input class="popUp__email-input" id="popUp-email-input" placeholder="albertogilsanjuan@gmail.com">
+            <p class="popUp__error" id="popUp-error">Email no válido</p>
             <button class="popUp__btn" id="popUp-btn">Send</button>
         </div>
     </section>
 
-    <button class="returnToTop" id="returnToTop">Return to the top</button>
+    <button class="returnToTop" id="returnToTop">
+        <img class="returnToTop__icon" src="./resources/to_top_icon.png"/>
+    </button>
 
     <footer class="footer">
         <h2 class="footer__title">OXYGENShop</h2>

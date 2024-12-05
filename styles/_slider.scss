@@ -1,0 +1,88 @@
+.slider {
+    background-color: black;
+    position: relative;
+    text-align: center;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+
+    @media only screen and (min-width: 1000px) {
+        margin: 4rem 0;
+        max-width: 35rem;
+    }
+
+    &__img {
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+        padding: 2rem 0;
+
+        @media only screen and (min-width: 1000px) {
+            padding: 4rem 0;
+        }
+    }
+
+    &__back,
+    &__next {
+        position: absolute;
+        top: 42.5%;
+        width: 2rem;
+        cursor: pointer;
+        background-color: transparent;
+        opacity: .6;
+
+        @media only screen and (min-width: 1000px) {
+            transform: scale(1.6);
+            top: 46%;
+        }
+    }
+
+    &__back {
+        left: 4.5%;
+
+        @media only screen and (min-width: 1000px) {}
+    }
+
+    &__next {
+        right: 4.5%;
+
+        @media only screen and (min-width: 1000px) {}
+    }
+
+    &__menu {
+        position: absolute;
+        background-color: transparent;
+        right: 32%;
+        bottom: 3%;
+
+        @media only screen and (min-width: 1000px) {
+            right: 40%;
+        }
+
+        &__item {
+            display: inline-block;
+            width: .5rem;
+            height: .5rem;
+            margin: 0 .3rem;
+            border-radius: 50%;
+            background-color: gray;
+            cursor: pointer;
+            transition: background-color .3s;
+
+            @media only screen and (min-width: 1000px) {
+                margin: 0 .4rem;
+                transform: scale(1.5);
+                right: 40%;
+            }
+        }
+
+        &__active {
+            background-color: white;
+        }
+    }
+}
+
+.item-selected {
+    background-color: white;
+}
