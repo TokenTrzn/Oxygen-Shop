@@ -199,21 +199,24 @@
     <form class="form" id="contact">
         <h2 class="form__title">Any Questions?</h2>
         <p class="form__description">Leave your email addres or call us!</p>
-        <div class="form__example_div" id="email">
+
+        <div class="form__example__email" id="email">
             <img class="form__icon" src="./resources/Mail Icon 2.png" />
-            <p class="form__example">info@bestshop.xyz</p>
+            <p class="form__example">albertogilsanjuan@gmail.com</p>
         </div>
-        <div class="form__example_div" id="phone">
+        <div class="form__example__phone" id="phone">
             <img class="form__icon" src="./resources/Phone Icon 2.png" />
-            <p class="form__example">123 456 789</p>
+            <p class="form__example">645 630 341</p>
         </div>
         <div class="form__name-input">
             <p class="form__placeholder">NAME</p>
             <input class="form__name" name="form__input" id="name-input" type="text" />
+            <p class="form__error-msg" id="name-error">El nombre debe tener al menos 2 carácteres</p>
         </div>
         <div class="form__email-input">
             <p class="form__placeholder">EMAIL</p>
             <input class="form__email" name="form__input" id="email-input" type="text" />
+            <p class="form__error-msg" id="email-error">El email no es válido</p>
         </div>
         <div class="form__data-protection">
             <input name="checkbox" id="checkbox" type="checkbox" />
