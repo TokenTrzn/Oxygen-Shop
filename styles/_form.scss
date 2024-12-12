@@ -179,7 +179,7 @@ input[type="checkbox"] {
     }
     
     @media only screen and (min-width: 1000px) {
-        top: 2.25rem;
+        top: 2.75rem;
     }
 }
 
@@ -214,6 +214,10 @@ label {
     color: #707070;
     display: inline-block;
     margin: 0 1.5rem 0 2rem;
+
+    @media only screen and (min-width: 1000px) {
+        margin-top: .6rem
+    }
 }
 
 

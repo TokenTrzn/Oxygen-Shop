@@ -884,7 +884,7 @@ input[type=checkbox]:checked::after {
 }
 @media only screen and (min-width: 1000px) {
   input[type=checkbox] {
-    top: 2.25rem;
+    top: 2.75rem;
   }
 }
 
@@ -919,6 +919,11 @@ label {
   color: #707070;
   display: inline-block;
   margin: 0 1.5rem 0 2rem;
+}
+@media only screen and (min-width: 1000px) {
+  label {
+    margin-top: 0.6rem;
+  }
 }
 
 .returnToTop {
@@ -990,6 +995,7 @@ label {
 }
 .footer__icon {
   height: 2rem;
+  text-decoration: none;
 }
 
 #github-icon {
