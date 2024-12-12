@@ -1,4 +1,4 @@
-const form = document.getElementById('form')
+const form = document.getElementById('prices')
 
 form.addEventListener('submit', (event) => {
     event.preventDefault()

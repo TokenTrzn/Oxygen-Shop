@@ -22,9 +22,18 @@
             letter-spacing: .2rem;
             padding: 1.6rem 5rem;   
 
-            &:hover {
-                color: black;
-                border-bottom: 3px solid var(--blue-color);
+            a {
+                text-decoration: none;
+                color: #A5A5A5;
+                font-family: 'Open Sans';
+                font-weight: 700;
+                font-size: 0.7rem;
+                letter-spacing: 0.25em;
+                line-height: 1rem;
+
+                &:hover {
+                    color: black;
+                }
             }
         }
 
@@ -75,6 +84,15 @@
 
             &__item {
                 color: #A5A5A5;
+
+                a {
+                    &:hover {
+                        border-bottom: 3px solid var(--blue-color);
+                        padding-bottom: 1.5rem;
+                    }
+                }
+
+                
             }
 
             &__icon {
