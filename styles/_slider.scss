@@ -6,10 +6,11 @@
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
+    margin-bottom: 5rem;
 
     @media only screen and (min-width: 1000px) {
-        margin: 4rem 0;
-        max-width: 35rem;
+        margin: 4rem 0 8rem;
+        max-width: 40rem;
     }
 
     &__img {
