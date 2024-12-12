@@ -988,8 +988,11 @@ label {
   top: 35%;
   left: 75%;
 }
+.footer__icon {
+  height: 2rem;
+}
 
-#twitter-icon {
+#github-icon {
   margin-right: 1rem;
 }
 
